@@ -1,3 +1,14 @@
-<h1 class="text-center">
-  Hello world!
-</h1>
+<div class="flex h-screen">
+  <div [ngClass]="open ?  'w-20' : 'w-72'" class="bg-orange-950 h-screen p-5 pt-8">
+    <fa-icon (click)="toggleMenu()" [icon]="faBars" class="text-white text-xl cursor-pointer"></fa-icon>
+
+    <h1 class="origin-left font-sans font-thin text-xl text-white mt-1">
+      {{ title }}
+    </h1>
+
+  </div>
+
+  <div>
+
+  </div>
+</div>
